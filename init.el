@@ -6,12 +6,16 @@
 ;; Hide Scrollbar & Toolbar
 (scroll-bar-mode 0)
 (tool-bar-mode 0)
+
 ;; Colors
+;; The actual color on display differs from the requested color.  
+;; (95% Brightness, RG 100% B 96%) => #f2f2e9 ~> #f3f3ed
+;; (~5500K Temperature) => #ffeede ~> #fff0d4
 (set-foreground-color "black")
-(set-background-color "#fffffd")
-(set-face-attribute 'fringe nil :foreground "black" :background "#fffffd")
-(set-face-attribute 'mode-line nil :foreground "black" :background "#fffffd" :box nil)
-(set-face-attribute 'mode-line-inactive nil :foreground "black" :background "#ededea" :box nil)
+(set-background-color "#f3f3ed")
+(set-face-attribute 'fringe nil :foreground "black" :background "#f3f3ed")
+(set-face-attribute 'mode-line nil :foreground "black" :background "#f3f3ed" :box nil)
+(set-face-attribute 'mode-line-inactive nil :foreground "black" :background "#d9d9d0" :box nil)
 
 ;;Mode-Line
 (setq default-mode-line-format
